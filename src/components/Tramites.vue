@@ -4,13 +4,13 @@
 </div> 
 <section id="container">
   <div class="w3-card-4">
-    <a href="/Formulario"><img class="Box_tramite" src="../assets/Derechosdepeticion.png" alt="PQR'S"></a>
+    <a href="/Formulario" target="_blank"><img class="Box_tramite" src="../assets/Derechosdepeticion.png" alt="PQR'S"></a>
   </div> 
   <div class="w3-container w3-center">
-    <a href="http://www.lostejos.com"><img class="Box_tramite" src="../assets/Decoluciones.png" alt="PQR'S"></a>
+    <a href="http://www.lostejos.com" target="_blank"><img class="Box_tramite" src="../assets/Decoluciones.png" alt="PQR'S"></a>
   </div>    
   <div class="w3-container w3-center">
-    <a href="http://www.lostejos.com"><img class="Box_tramite" src="../assets/prescripcion.png" alt="PQR'S"></a>
+    <a href="http://www.lostejos.com" target="_blank"><img class="Box_tramite" src="../assets/prescripcion.png" alt="PQR'S"></a>
   </div>  
 </section>
  

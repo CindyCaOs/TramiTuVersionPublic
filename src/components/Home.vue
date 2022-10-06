@@ -15,9 +15,9 @@
 
 <!-- The social media icon bar -->
 <div class="icon-bar">
-  <a href="https://es-la.facebook.com/GobernaciondeCaldas/" class="facebook"><i class="fa fa-facebook"></i></a>
-  <a href="https://www.minjusticia.gov.co/servicio-ciudadano/Documents/ABC_Derecho%20de%20Peticio´n_cartilla.pdf" class="google"><i class="fa fa-google"></i></a>
-  <a href="https://www.youtube.com/watch?v=E-SOGVZlEQo" class="youtube"><i class="fa fa-youtube"></i></a>
+  <a href="https://es-la.facebook.com/GobernaciondeCaldas/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="http://ventanillaunica.caldas.gov.co/peticiones-quejas-y-reclamos/#/login" target="_blank" class="google"><i class="fa fa-google"></i></a>
+  <a href="https://www.youtube.com/watch?v=E-SOGVZlEQo" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
 </div>   
   </div>
 </template>
@@ -98,18 +98,8 @@ export default  defineComponent ({
   color: white;
 }
 
-.twitter {
-  background: #55ACEE;
-  color: white;
-}
-
 .google {
-  background: #dd4b39;
-  color: white;
-}
-
-.linkedin {
-  background: #007bb5;
+  background: #367042;
   color: white;
 }
 
