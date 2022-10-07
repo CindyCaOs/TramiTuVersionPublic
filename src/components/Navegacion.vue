@@ -3,7 +3,6 @@
     <div class="img">
       <img alt="TramiTu logo" id="logo" src="../assets/tramitú.png">
     </div>
-    <slot id="text">Derechos de Peticiòn | Devoluciones | Prescripciones</slot>
     <nav>
       <router-link to="/">Home</router-link> 
       <router-link to="/Document">Información</router-link> 
@@ -23,6 +22,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+ font-family: Roboto;
+}
 #principal {
   position: relative;
   height: 100px;
@@ -30,9 +37,9 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #e3ebdf;
+  background-color: #e4ffe4eb;
   font-family: Roboto;
-  padding: 1%;
+  padding: 4%;
 }
 #text {
   font-family: Roboto;
@@ -50,22 +57,27 @@ nav {
 
 nav>a {
   text-decoration: double;
-  border-color: #b3b3b3;
-  background-color: #c6eb95a1;
-  color:#608a66;
-  padding: 0.6em;
-  margin-right: 5px;
-  margin-left: 0.5%;
+  border-color: #244e0a;
+  background-color: #8aaf59a1;
+  color:rgba(66, 138, 58, 0.863);
+  padding: 1em;
+  margin-right: 2%;
+  margin-left: 0%;
   font-family: Roboto;
+  border-radius: #39402f;
+  position: sticky center;
+  flex-shrink: 0;
+  object-fit: cover;
 
 &.router-link-exact-active {
-  color: rgb(65, 102, 82);
+  color: rgb(72, 78, 70);
 }
 }
 #logo {
   position: absolute;
   top: 0;
-  height: 80%;
-  margin: 1%;
+  height: 90%;
+  margin: .3%;
+  margin-left: 3%;
 }
 </style>
