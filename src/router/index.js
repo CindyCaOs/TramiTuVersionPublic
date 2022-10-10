@@ -3,6 +3,7 @@ import HomeView from '../views/VistaPrincipal.vue';
 import TramitesView from '../views/TramitesView.vue';
 import Navegacion from '../components/Navegacion.vue';
 import Formulario from '../views/FormularioView.vue';
+import jsPDF from 'jspdf';
 
 const routes = [
   {

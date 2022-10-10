@@ -4,20 +4,21 @@
 </div> 
 <section id="container">
   <div class="w3-card-4">
-    <a href="/Formulario" target="_blank"><img class="Box_tramite" src="../assets/Derechosdepeticion.png" alt="PQR'S"></a>
+    <a href="/Formulario" target="_blank"><img class="Box_tramite" src="../assets/derechodepeticion.png" alt="PQR'S"></a>
   </div> 
   <div class="w3-container w3-center">
-    <a href="http://www.lostejos.com" target="_blank"><img class="Box_tramite" src="../assets/Decoluciones.png" alt="PQR'S"></a>
+    <a href="/Formulario" target="_blank"><img class="Box_tramite" src="../assets/derechodepeticion.png" alt="PQR'S"></a>
   </div>    
   <div class="w3-container w3-center">
-    <a href="http://www.lostejos.com" target="_blank"><img class="Box_tramite" src="../assets/prescripcion.png" alt="PQR'S"></a>
+    <a href="/Formulario" target="_blank"><img class="Box_tramite" src="../assets/derechodepeticion.png" alt="PQR'S"></a>
   </div>  
 </section>
  
 </template>
-<script>
 
+<script>
 </script>
+
 <style scoped>
 *{
   margin: 0px;
@@ -40,7 +41,8 @@ body{
 .title{
   font-size: 150%;
   text-align: center;
-  color:rgb(96, 134, 111);
+  color: rgba(66, 138, 58, 0.863);
+  /*color:rgb(96, 134, 111);*/
   font-family: Roboto;
   margin-top: 8%;
 }

@@ -37,7 +37,7 @@ body{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #e4ffe4eb;
+  background-color: #e4e4e4eb;
   font-family: Roboto;
   padding: 4%;
 }
@@ -60,15 +60,11 @@ nav>a {
   border-color: #244e0a;
   background-color: #8aaf59a1;
   color:rgba(66, 138, 58, 0.863);
-  padding: 1em;
+  padding: .7em;
   margin-right: 2%;
   margin-left: 0%;
   font-family: Roboto;
-  border-radius: #39402f;
-  position: sticky center;
-  flex-shrink: 0;
-  object-fit: cover;
-
+ 
 &.router-link-exact-active {
   color: rgb(72, 78, 70);
 }
