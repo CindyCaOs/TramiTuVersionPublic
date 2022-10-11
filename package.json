@@ -12,6 +12,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "axios": "^1.0.0",
     "bootstrap-vue-3": "^0.3.4",
+    "boxicons": "^2.1.4",
     "core-js": "^3.8.3",
     "img-comparison-slider": "^7.7.2",
     "jspdf": "^2.5.1",

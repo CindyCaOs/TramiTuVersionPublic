@@ -24,12 +24,12 @@
         <label for="id-select">Tipo de documento</label> <br>
           <select name="id-document" id="id-select" v-model="tipodocumento">
             <option value="">Selecciona tipo de documento</option>
-            <option value="T.I">T.I</option>
-            <option value="CC">C.C</option>
-            <option value="CE">C.E</option>
+            <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+            <option value="Cedula de Ciudadania">Cedula de Ciudadania</option>
+            <option value="Cedula de Extranjeria">Cedula de Extranjeria</option>
           </select> 
           <br> <!--agregar un espacio en esta parte-->
-        <input type="text" id="lname" name="lastname" placeholder="Número de documento.." v-model="numerodocumento">
+        <input type="text" id="lname" name="lastname" placeholder="Número de documento.." v-model="numberdocumento">
       </div>  
     </div>
     <div class="row">
@@ -62,17 +62,17 @@
       </div>
     </div>
     <div class="row">   
-      <input type="buttonTest" value="Generar" @click="generarpdf()">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js">
+      <input type="button" value="Generar" @click="nombre()">
     </div>
     </form>
-   <!-- <p class="peticion">{{resultado}}</p> -->
+   <p class="peticion">{{resultado}}</p>
   </div>
 </div>  
 </template>
   
 <script>
   import axios from 'axios';
+
   export default {
   data() {
     return {
@@ -81,7 +81,7 @@
       Nombre:'',
       apellidos:'',
       tipodocumento:'',
-      numerodocumento:'',
+      numberdocumento:'',
       telefono:'',
       municipio:'',
       direccion:'',
@@ -95,16 +95,11 @@
   },  
   methods: {
     nombre() {
-     this.resultado='Yo '+this.Nombre + this.apellidos +'con'+this.tipodocumento + 'número' + 
+     this.resultado='Yo '+ this.Nombre + this.apellidos + 'identificada con' + this.tipodocumento + 'número' + this.numberdocumento +
      'y domiciliado en la calle' + this.direccion + 'en ejercicio del derecho de petición que consagra el artículo 23 de la Constitución Política de Colombia, Ley 1755 del 30 de junio de 2015 y demás normas concordantes, por medio del presente me permito solicitar se atienda la petición que más adelante formulare, de conformidad a los siguientes' +
      this.hechos + 'Por lo tanto con base en lo esbozado en el acápite anterior, solicito la siguiente' + 
      this.peticiones + 'Para los efectos pertinentes, anexo los siguientes soportes y documentos:'     
     },
-   generarpdf() {
-      doc.fromHTML($('#abc').html(), 15, 15, {'width': 170,
-      'elementHandlers': specialElementHandlers });
-      doc.save('SurveyReport.pdf');
-        },
     retrieveData() {
       axios.get('https://www.datos.gov.co/resource/xdk5-pm3f.json')
         .then(response => {
@@ -142,7 +137,6 @@ mounted(){
   this.retrieveData();
 }
 }
-
 </script>
 
 <style>
@@ -152,7 +146,7 @@ mounted(){
   box-sizing: border-box;
 }
 .peticion{
-  color: red;
+  color: rgb(24, 24, 24);
 }
 input[type=text], select, textarea{
   width: 100%;
@@ -170,7 +164,7 @@ label {
 }
 
 /* Style the submit button */
-input[type=buttonTest] {
+input[type=button] {
   background-color: rgba(66, 138, 58, 0.863);
   color: white;
   padding: 12px 20px;

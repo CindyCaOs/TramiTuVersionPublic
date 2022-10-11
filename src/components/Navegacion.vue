@@ -1,7 +1,7 @@
 <template>
   <header id="principal" class="box-shadow">
     <div class="img">
-      <img alt="TramiTu logo" id="logo" src="../assets/tramitú.png">
+      <img alt="TramiTu logo" id="logo" src="../assets/imagenes/tramitú.png">
     </div>
     <nav>
       <router-link to="/">Home</router-link> 
@@ -37,7 +37,7 @@ body{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #e4e4e4eb;
+  background-color: white;
   font-family: Roboto;
   padding: 4%;
 }
@@ -53,25 +53,26 @@ nav {
   position: relative;
   top: 0;
   height: 100%;
+  color: azure;
 }
 
 nav>a {
-  text-decoration: double;
-  border-color: #244e0a;
-  background-color: #8aaf59a1;
   color:rgba(66, 138, 58, 0.863);
-  padding: .7em;
+  padding: 10px;
   margin-right: 2%;
   margin-left: 0%;
+  text-decoration: none;
+  font-weight: 300;
   font-family: Roboto;
  
 &.router-link-exact-active {
-  color: rgb(72, 78, 70);
+  color: rgb(71, 140, 48);
+  font-weight: 700;
 }
 }
 #logo {
   position: absolute;
-  top: 0;
+  top: 0%;
   height: 90%;
   margin: .3%;
   margin-left: 3%;

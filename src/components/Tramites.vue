@@ -4,13 +4,13 @@
 </div> 
 <section id="container">
   <div class="w3-card-4">
-    <a href="/Formulario" target="_blank"><img class="Box_tramite" src="../assets/derechodepeticion.png" alt="PQR'S"></a>
+    <a href="/Formulario" target="_blank"><img class="Box_tramite" src="../assets/imagenes/derechodepeticion.png" alt="PQR'S"></a>
   </div> 
   <div class="w3-container w3-center">
-    <a href="/Formulario" target="_blank"><img class="Box_tramite" src="../assets/derechodepeticion.png" alt="PQR'S"></a>
+    <a href="/Formulario" target="_blank"><img class="Box_tramite" src="../assets/imagenes/devoluciones.png" alt="PQR'S"></a>
   </div>    
   <div class="w3-container w3-center">
-    <a href="/Formulario" target="_blank"><img class="Box_tramite" src="../assets/derechodepeticion.png" alt="PQR'S"></a>
+    <a href="/Formulario" target="_blank"><img class="Box_tramite" src="../assets/imagenes/prescripcion.png" alt="PQR'S"></a>
   </div>  
 </section>
  
@@ -34,16 +34,15 @@ body{
   flex-direction: row; 
 }
 .Box_tramite{
-  width: 50%;
+  width: 65%;
   margin-top: 8%;
-  margin: 20%;
+  margin: 10%;
 }
 .title{
   font-size: 150%;
   text-align: center;
   color: rgba(66, 138, 58, 0.863);
-  /*color:rgb(96, 134, 111);*/
   font-family: Roboto;
-  margin-top: 8%;
+  margin-top: 4%;
 }
 </style>
