@@ -11,27 +11,28 @@
  </script>
 
 <template>
-    <h1>hola</h1>
-   <div class="container__cards">
+    <div class="container__cards">
         <div class="card">
             <div class="cover">
-                <img src="" alt="">
+                <img src="../assets/imagenes/normativdad1.png" alt="">
                 <div class="img__back"></div>
             </div>
             <div class="description">
-                <h2>Carolina Herrera</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
-                <input type="button" value="Leer Más">
+                <h2>Derecho de Peticiòn</h2>
+                <p>LEY 1755 DE 2015 (Junio 30) <br>
+                   “Por medio de la cual se regula el Derecho Fundamental de Petición
+                   y se sustituye un título del Código de Procedimiento Administrativo 
+                   y de lo Contencioso Administrativo”</p>
+                   <a href='https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=65334' target="_bank"><input type="button" value="Leer Más"></a>
             </div>
         </div>
-
         <div class="card">
             <div class="cover">
-                <img src="" alt="">
+                <img src="../assets/imagenes/Normatividad.png" alt="">
                 <div class="img__back"></div>
             </div>
             <div class="description">
-                <h2>Elon Musk</h2>
+                <h2>Devoluciones</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
                 <input type="button" value="Leer Más">
             </div>
@@ -48,7 +49,6 @@
                 <input type="button" value="Leer Más">
             </div>
         </div>
-
     </div>
 </template>
 
@@ -65,10 +65,12 @@ body{
 .container__cards{
     max-width: 1200px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position:relative;
+    
 }
 
 .card{
@@ -93,7 +95,7 @@ body{
     display: block;
     margin: auto;
     position: relative;
-    top: 40px;
+    top: 60px;
     z-index: 1;
     filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
     transition: all 400ms;
@@ -116,15 +118,15 @@ body{
 }
 
 .card:nth-of-type(1) .img__back{
-    background-image: url();
+    background-image: url(../assets/imagenes/fondo.png);
 }
 
 .card:nth-of-type(2) .img__back{
-    background-image: url();
+    background-image: url(../assets/imagenes/fondo.png);
 }
 
 .card:nth-of-type(3) .img__back{
-    background-image: url();
+    background-image: url(../assets/imagenes/fondo.png);
 }
 
 .card:hover .img__back{
@@ -155,7 +157,7 @@ body{
     padding: 10px 40px;
     margin-top: 20px;
     border: none;
-    background: #A6359D;
+    background: #477926;
     color: white;
     font-size: 14px;
     cursor: pointer;
@@ -164,7 +166,7 @@ body{
 }
 
 .card .description input:hover{
-    background: #83277b;
+    background: #39ad79;
 }
 
 </style>

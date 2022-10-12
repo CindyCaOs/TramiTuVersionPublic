@@ -104,39 +104,60 @@
       </div>
     </section>
   </section>
-  <form action="" class="newsletter">
-    <input type="text" class="newsletter_input" placeholder="Ingresa tú email">
-    <input type="submit" class="newsletter_submit" placeholder="Hazlo Tú mismo"> 
-  </form>
   <footer class="footer">
     <div class="container footer_caption">
-      <div class="download_app">
+      <section class="download">
+        <h3 class="title_footer">Descarga esta App Aquí</h3>
+        <div class="download_app">
         <div class="download_item">
-          <i class="fa fa-refresh download_logo"></i>
-          <h4 class="download_title">Buscamos una saolución</h4>
+          <i class="bx bxl-play-store download_logo"></i>
+          <h4 class="download_title">Play Store</h4>
         </div>
         <div class="download_item">
-          <i class="fa fa-male download_logo"></i>
-          <h4 class="download_title">Profesionales</h4>
+          <i class="bx bxl-apple download_logo"></i>
+          <h4 class="download_title">App Store</h4>
         </div>
       </div>
       <div class="footer_copy">
-        <p class="copyright">Todos los derehos reservados</p>
+        <p class="copyright">2022 Todos los derehos reservados</p>
 
-        <a href="#" class="politica_privacidad">Politica de privacidad</a>
+        <a href="#" class="politica_privacidad politica_privacidad--margin">Politica de privacidad</a>
         <a href="#" class="politica_privacidad">Terminos y condiciones</a>
       </div>
-    </div>
+      </section>
+      <section class="get-email">
+        <h3 class="title_footer">Te enviamos más informacón</h3>
+        <form action="" class="newsletter newsletter--modifier">
+          <input type="text" class="newsletter_input" placeholder="Ingresa tú email">
+          <input type="submit" class="newsletter_submit" placeholder="Solicita informaciòn"> 
+        </form>
+        <div class="socialmedia">
+          <p class="socialmedia_legend">Siguenos en:</p>
+          <i class="socialmedia_icon bx bxl-facebook-circle"></i>
+          <i class="socialmedia_icon bx bxl-linkedin-square"></i>
+          <i class="socialmedia_icon bx bxl-twitter"></i>
+          <i class="socialmedia_icon bx bxl-instagram"></i>
+          <i class="socialmedia_icon bx bxl-github"></i>
+        </div>
+      </section>
+    </div>  
     <div class="contact">
+      <div class="item_contact item_contact--gold">
       <i class='bx bx-envelope contact_icon'></i>
       <h3 class="contact_title">TramiTú</h3>
-    </div>
-    <div class="contact">
+      </div>
+      <div class="item_contact item_contact--gold">
       <i class='bx bxs-face contact_icon'></i>
       <h3 class="contact_title">Cindy Cardona Ospina</h3>
-    </div><div class="contact">
+      </div>
+      <div class="item_contact item_contact--gold">
       <i class='bx bxs-phone-call'></i>
       <h3 class="contact_title">8 856 25 12</h3>
+      </div>
+      <div class="item_contact item_contact--gold">
+      <i class='bx bxs-shield-alt-2'></i>
+      <h3 class="contact_title">Cuidamos tús datos</h3>
+      </div>
     </div>
   </footer>
 </template>
