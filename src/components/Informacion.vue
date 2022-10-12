@@ -40,13 +40,15 @@
 
         <div class="card">
             <div class="cover">
-                <img src="../assets/imagenes/presentacion3.png" alt="">
+                <img src="../assets/imagenes/formulario3.png" alt="">
                 <div class="img__back"></div>
             </div>
             <div class="description">
-                <h2>Aya Nakamura</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
-                <input type="button" value="Leer Más">
+                <h2>Prescripción</h2>
+                <p>Art. 817. Termino de la prescripción (Estatuto Tributario Nacional) <br> La acción de cobro de las obligaciones 
+                fiscales prescribe en el término de cinco (5) años, contados a partir de la fecha en 
+                que se hicieron legalmente exigibles.</p>
+                <a href='https://estatuto.co/817https://estatuto.co/817' target="_bank"><input type="button" value="Leer Más"></a>
             </div>
         </div>
     </div>
@@ -58,8 +60,10 @@
   padding: 0px;
   box-sizing: border-box;
 }  
-body{
+
+template{
     background: #F1FAFF;
+    font-family: 'Inconsolata', monospace;
 }
 
 .container__cards{
@@ -157,7 +161,7 @@ body{
     padding: 10px 40px;
     margin-top: 20px;
     border: none;
-    background: #477926;
+    background: linear-gradient(180deg, #244840 0%, #3d804a 100%);
     color: white;
     font-size: 14px;
     cursor: pointer;
@@ -166,7 +170,7 @@ body{
 }
 
 .card .description input:hover{
-    background: #39ad79;
+    background: #1e4447;
 }
 
 </style>
