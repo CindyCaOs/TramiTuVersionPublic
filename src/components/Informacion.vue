@@ -11,6 +11,7 @@
  </script>
 
 <template>
+    <h1>hola</h1>
    <div class="container__cards">
         <div class="card">
             <div class="cover">
