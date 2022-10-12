@@ -11,41 +11,44 @@
  </script>
 
 <template>
-  <div class="container">
-    <ul class="slider">
-      <li id="slide1">
-        <img class="img1" src="../assets/imagenes/Home6.png" alt="persona con hoja">
-        <h1>El derecho de petición es un derecho fundamental
-        establecido en el artículo 23 de la Constitución
-        Política de Colombia. <br>
-        Es la facultad que tiene toda persona para presentar solicitudes respetuosas 
-        ante las autoridades o entidades, ya sea por motivos de interés general o particular.  
-        </h1>
-      </li>
-      <li id="slide2">
-        <img class="img2" src="../assets/imagenes/informacion2.png" alt="documento">
-        <!--h1>Devolución: Derecho que tiene el contribuyente a solicitar el reintegro de una parte o el total del dinero 
-          pagado a la administración, a causa de un pago mayor al debido , pago de lo no debido o pago en exceso</h1-->
-      </li>
-      <li id="slide3">
-        <img class="img3" src="../assets/imagenes/tramites.png" alt="tramites">
-        <!--h1>Prescripción: es el fenómeno mediante el cual el ejercicio de un derecho se adquiere 
-        o se extingue con el solo transcurso del tiempo. Esto es de acuerdo a las condiciones 
-        descritas en las normas para cada situación</h1-->
-      </li>
-    </ul>
-  <ul class="menu">
-    <li>
-      <a href="#slide1">1</a>
-    </li>
-    <li>
-      <a href="#slide2">2</a>
-    </li>
-     <li>
-      <a href="#slide3">3</a>
-    </li>
-  </ul>
-</div>
+   <div class="container__cards">
+        <div class="card">
+            <div class="cover">
+                <img src="" alt="">
+                <div class="img__back"></div>
+            </div>
+            <div class="description">
+                <h2>Carolina Herrera</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                <input type="button" value="Leer Más">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="cover">
+                <img src="" alt="">
+                <div class="img__back"></div>
+            </div>
+            <div class="description">
+                <h2>Elon Musk</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                <input type="button" value="Leer Más">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="cover">
+                <img src="../assets/imagenes/presentacion3.png" alt="">
+                <div class="img__back"></div>
+            </div>
+            <div class="description">
+                <h2>Aya Nakamura</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                <input type="button" value="Leer Más">
+            </div>
+        </div>
+
+    </div>
 </template>
 
 <style scoped>
@@ -55,87 +58,112 @@
   box-sizing: border-box;
 }  
 body{
-  background-color: lightgrey;
-  font-family: sans-serif;
-}
-.container{
-  margin: 0%;
-  background-color: white;
-  width: 65%;
-  padding: 0.9%;
-  margin-left: 35%;
-}
-ul, li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-ul.slider{
-  position: relative;
-  width: 80%;
-  height: auto;
-}
-ul.slider li {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  opacity: 0;
-  width: inherit;
-  height: inherit;
-  transition: opacity .5s;
-  background:#fff;
-}
-ul.slider li img{
-  width: 70%;
-  height: 190%;
-  margin: 2%;
-  /*opacity: 0.7;*/
-}
-.img1 {
-  width: 100%;
-  height: 50%;
-  margin: 5%;
-}
-.img2 {
-  width: 100%;
-  height: 50%;
-  margin: 5%;
-}
-ul.slider li:first-child {
-  opacity: 1; /*Mostramos el primer <li>*/
-}
-ul.slider li:target {
-  opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
-}
-.menu{
-  margin-bottom: left;
-  margin: 20%;
-  margin-top: 26%;
-}
-.menu li{
-  display: inline-block;
-  text-align: center;
-  margin-top: 43%;
-}
-.menu li a{
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  background-color: rgb(121, 151, 101);
-  padding: 2px;
-  width: 30px;
-  height: 28px;
-  font-size: 20px;
-  border-radius: 100%;
+    background: #F1FAFF;
 }
 
-h1{
-  font-family: Roboto;
-  color: rgba(66, 138, 58, 0.863);
-  position: absolute;
-  font-size: 125%;  
-  top: 94;
-  left: 0%; 
- 
+.container__cards{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.card{
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.card:hover{
+    width: 350px;
+}
+
+.card .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 0px;
+    filter: none;
+}
+
+.card .img__back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.card:nth-of-type(1) .img__back{
+    background-image: url();
+}
+
+.card:nth-of-type(2) .img__back{
+    background-image: url();
+}
+
+.card:nth-of-type(3) .img__back{
+    background-image: url();
+}
+
+.card:hover .img__back{
+    bottom: -40px;
+}
+
+.card .description{
+    background: white;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+
+.card:hover .description{
+    padding: 40px;
+}
+
+.card .description h2{
+    margin-top: 10px;
+}
+
+.card .description p{
+    margin-top: 10px;
+}
+
+.card .description input{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background: #A6359D;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.card .description input:hover{
+    background: #83277b;
+}
+
 </style>

@@ -58,15 +58,15 @@ nav {
 
 nav>a {
   color:rgba(66, 138, 58, 0.863);
-  padding: 10px;
+  padding: 20px;
   margin-right: 2%;
   margin-left: 0%;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 900;
   font-family: Roboto;
  
 &.router-link-exact-active {
-  color: rgb(71, 140, 48);
+  color: rgb(119, 223, 133);
   font-weight: 700;
 }
 }

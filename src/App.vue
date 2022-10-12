@@ -15,7 +15,10 @@ export default {
 }
 }
 </script>
-<style scoped lang="scss">
+<style scoped>
+*{
+  font-family: 'Inconsolata', monospace;
+}
 html,
 body {
   padding: 0;
