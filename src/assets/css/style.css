@@ -6,6 +6,7 @@
     --green4: #476047a8;
     --green5: rgb(231, 249, 186); 
     --gray: #dcd7d780;
+    --gray1: #eeeeee80;
     --blue: #244840;
     --shadow: #9fba4d;
     --shadow: 0 8px 8px;
@@ -122,7 +123,7 @@ template{
     width: 30%;
     padding: 30px 0;
     overflow: hidden;
-    background: rgba(242, 255, 232, 0.849);
+    background: #eeeeee80;
     border-radius: 10px;
     position: static;
     text-align: right;
@@ -187,6 +188,8 @@ template{
     object-fit: cover;
     border-radius: inherit;
     opacity: 0.5;
+    border-radius: 6px;
+    border: 3px solid rgb(150, 236, 147);
 }
 .background_text{
     position: absolute;
@@ -195,7 +198,7 @@ template{
     top: 55%;
     font-weight: bold;
     bottom: 30px;
-    left: 15px;
+    
     color: rgb(63, 92, 26);
 }
 .background_title{
@@ -334,7 +337,7 @@ template{
     display:flex;
     width: 100%;
     flex-wrap: wrap;
-    color: #fff;
+    color: rgb(246, 245, 245);
 }
 .item_contact{
     width: 25%;
@@ -345,6 +348,76 @@ template{
 }
 .item_contact--gold{
     background: linear-gradient(180deg, #244840 0%, #3d804a 100%);
-    color: wheat;
+    color: wheat;  
+}
+.contact_icon{
+    font-size: 14px;
+    color: var(--gray1);
+    line-height: 20px;
+    margin-right: 4px;
+}
+.contact_title{
+    font-size: 16px;
+    line-height: 20px;
+}
+@media screen and (max-width:900px){
+    .mockup{
+        width: 600px;
+        height: auto;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .copy{
+        font-size: 22px;
+    }
+    .cta{
+        padding: 15px 22px;
+    }
+    .container-card{
+        justify-content: space-evenly;
+    }
+    .services .card{
+        width: 45%;
+    }
+    .background{
+        width: 52%;
+    }
+    .card{
+        width: 42%;
+    }
+    .check_item{
+        width: 45%;
+        margin-bottom: 35px;
+    }
+    .newsletter{
+        width: 80%;
+    }
+    .download{
+        width: 100%;
+    }
+    .download_app{
+        justify-content: space-between;
+    }
+    .download_item{
+        width: 45%;
+    }
+    .get-email{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .socialmedia_icon{
+        font-size: 18px;
+    }
+    .socialmedia_legend{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:700px) {
+    main .container,
+    .footer .container{
+        padding: 60px 0;
+    }
+    
     
 }

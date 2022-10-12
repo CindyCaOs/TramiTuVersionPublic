@@ -37,7 +37,7 @@ body{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
+  background-color:#eeeeee80;
   font-family: Roboto;
   padding: 4%;
 }
@@ -76,5 +76,19 @@ nav>a {
   height: 90%;
   margin: .3%;
   margin-left: 3%;
+}
+@media screen and (max-widt) {
+  .nav{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .nav>a{
+    height: auto;
+    text-align:center;
+  }
+  #logo{
+    padding: 15px 0;
+    text-align: center;
+  }
 }
 </style>

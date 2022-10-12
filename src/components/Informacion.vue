@@ -33,7 +33,10 @@
             </div>
             <div class="description">
                 <h2>Devoluciones</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                <p>Ordenanza 816 del 2017 Art. 302 Devolución de saldos a favor<br>  
+                Los contribuyentes que liquiden saldos a favor en sus declaraciones, 
+                podrán solicitar devolución. La solicitud deberá presentarse a más 
+                tardar dos (2) años después de la fecha para declarar.</p>
                 <input type="button" value="Leer Más">
             </div>
         </div>
@@ -81,6 +84,7 @@ template{
     width: 300px;
     margin: 10px;
     transition: all 300ms;
+    border-radius: #244840 solid;
 }
 
 .card:hover{
@@ -170,7 +174,14 @@ template{
 }
 
 .card .description input:hover{
-    background: #1e4447;
+    background: #51d0bb;
+}
+h2{
+    font-size: 30px;
+    color: #3d804a;   
+}
+p{
+  color:#244840;  
 }
 
 </style>
