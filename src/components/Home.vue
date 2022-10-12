@@ -14,7 +14,7 @@
   <section class="services">
     <div class="container">
       <h2 class="subtitle">Te contamos un poco<span class="point"></span></h2>
-      <p class="copy_section">Sobre los tributos más consultados en el Departamento de Caldas</p>
+      <p class="copy_section_uno">Sobre los tributos más consultados en el Departamento de Caldas</p>
   <article class="container-card">
     <div class="card">
       <img src="../assets/imagenes/tamites.png" class='card_img' alt="hombre_con_documento">
@@ -53,9 +53,9 @@
           <div class="card_text">
           <h3 class="card_title">Noticias<span class="point">.</span></h3>
           <p class="card_date">20 de octubre 2022</p>
-          <p class="card_copy">Poner noticia tributaria del dia 
+          <p class="card_copy">Titular noticia tributaria del día 
           </p>
-          <a href="#" class="card_button">Leela aquí</a>
+          <a href="https://www.ambitojuridico.com/noticias/tributario" class="card_button" target='_blank'>Leela aquí</a>
           </div>
         </div>
         <div class="background">
@@ -67,11 +67,11 @@
         </div>
         <div class="card">
           <div class="card_text">
-          <h3 class="card_title">Leyes<span class="point">.</span></h3>
-          <p class="card_date">Estatuto Tributario Nacional</p>
+          <h3 class="card_title">Leyes Colombianas<span class="point">.</span></h3>
+          <p class="card_date">Senado de Colombia</p>
           <p class="card_copy">Poner noticia tributaria del dia estauto tributario
           </p>
-          <a href="#" class="card_button">Leelo aquí</a>
+          <a href="http://leyes.senado.gov.co/proyectos/" class="card_button" target='_blank'>informate aquí</a>
           </div>
         </div>
         <div class="background">

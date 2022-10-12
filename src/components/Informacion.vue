@@ -23,7 +23,7 @@
                    “Por medio de la cual se regula el Derecho Fundamental de Petición
                    y se sustituye un título del Código de Procedimiento Administrativo 
                    y de lo Contencioso Administrativo”</p>
-                   <a href='https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=65334' target="_bank"><input type="button" value="Leer Más"></a>
+                   <a href='https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=65334' target="_bank"><input type='button' value='Leer Más'></a>
             </div>
         </div>
         <div class="card">
@@ -37,7 +37,7 @@
                 Los contribuyentes que liquiden saldos a favor en sus declaraciones, 
                 podrán solicitar devolución. La solicitud deberá presentarse a más 
                 tardar dos (2) años después de la fecha para declarar.</p>
-                <input type="button" value="Leer Más">
+                <a href='https://www.ilc.com.co/storage/files/LFURUJEAWN_20190409220458.pdf' target='_bank'><input type='button' value='Leer Más'></a> 
             </div>
         </div>
 
@@ -51,7 +51,7 @@
                 <p>Art. 817. Termino de la prescripción (Estatuto Tributario Nacional) <br> La acción de cobro de las obligaciones 
                 fiscales prescribe en el término de cinco (5) años, contados a partir de la fecha en 
                 que se hicieron legalmente exigibles.</p>
-                <a href='https://estatuto.co/817https://estatuto.co/817' target="_bank"><input type="button" value="Leer Más"></a>
+                <a href='https://estatuto.co/817https://estatuto.co/817' target='_bank'><input type='button' value='Leer Más'></a>
             </div>
         </div>
     </div>

@@ -21,14 +21,14 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 body{
- font-family: Roboto;
+  font-family: 'Inconsolata', monospace;
 }
 #principal {
   position: relative;
@@ -38,11 +38,10 @@ body{
   align-items: center;
   justify-content: space-between;
   background-color:#eeeeee80;
-  font-family: Roboto;
   padding: 4%;
 }
 #text {
-  font-family: Roboto;
+  font-family: 'Inconsolata', monospace;
   color: rgb(65, 102, 82); 
 }
 nav {
@@ -63,7 +62,7 @@ nav>a {
   margin-left: 0%;
   text-decoration: none;
   font-weight: 900;
-  font-family: Roboto;
+  font-family: 'Inconsolata', monospace;
  
 &.router-link-exact-active {
   color: rgb(119, 223, 133);
