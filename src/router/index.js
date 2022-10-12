@@ -3,7 +3,8 @@ import HomeView from '../views/VistaPrincipal.vue';
 import TramitesView from '../views/TramitesView.vue';
 import Navegacion from '../components/Navegacion.vue';
 import Formulario from '../views/FormularioView.vue';
-import jsPDF from 'jspdf';
+import Form from '../views/Form.vue';
+
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/Formulario',
     name: 'Formulario',
     component: Formulario
+  },
+  {
+    path: '/Form',
+    name: 'Form',
+    component: Form
   },
 ]
 

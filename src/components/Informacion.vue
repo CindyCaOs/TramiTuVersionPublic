@@ -51,7 +51,7 @@
                 <p>Art. 817. Termino de la prescripción (Estatuto Tributario Nacional) <br> La acción de cobro de las obligaciones 
                 fiscales prescribe en el término de cinco (5) años, contados a partir de la fecha en 
                 que se hicieron legalmente exigibles.</p>
-                <a href='https://estatuto.co/817https://estatuto.co/817' target='_bank'><input type='button' value='Leer Más'></a>
+                <a href='https://estatuto.co/817' target='_bank'><input type='button' value='Leer Más'></a>
             </div>
         </div>
     </div>
