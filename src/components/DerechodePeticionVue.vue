@@ -44,12 +44,12 @@
       <div class="col-25">
         <label for="subject">Hechos</label>
         <input type="text" id="lname" name="lastname" placeholder="Sucesos" v-model="hechos">
-        <textarea id="subject" name="subject" style="height:200px"></textarea>
+        <textarea id="subject" v-model='hechos_text' name="subject" style="height:200px"></textarea>
       </div>
       <div class="col-25">
         <label for="subject">Peticiones</label>
         <input type="text" id="lname" name="lastname" placeholder="Peticiòn" v-model="peticiones">
-        <textarea id="subject" name="subject" style="height:200px"></textarea>
+        <textarea id="subject" v-model="peticiones_text" name="subject" style="height:200px"></textarea>
       </div>
       <div class="col-25">
         <label for="country">Datos de contacto</label><br>
@@ -86,7 +86,9 @@
       municipio:'',
       direccion:'',
       hechos:'',
+      hechos_text:'',
       peticiones:'',
+      peticiones_text:'',
       correo:'',
       dirnotificacion:'',
       resultado: '',
