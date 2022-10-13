@@ -1,7 +1,7 @@
 <template>
-    <Formulario />
+    <FormEnsayo />
 </template>
 
 <script setup>
-    import Formulario from '@/components/DerechodePeticionVue.vue'
+    import FormEnsayo from '@/components/FormEnsayo.vue'
 </script>
