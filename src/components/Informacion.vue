@@ -18,11 +18,12 @@
                 <div class="img__back"></div>
             </div>
             <div class="description">
-                <h2>Derecho de Peticiòn</h2>
-                <p>LEY 1755 DE 2015 (Junio 30) <br>
-                   “Por medio de la cual se regula el Derecho Fundamental de Petición
+                <h2>Derecho Peticiòn</h2>
+                <p>LEY 1755 DE 2015 <br>
+                   “Se regula el Derecho Fundamental de Petición
                    y se sustituye un título del Código de Procedimiento Administrativo 
-                   y de lo Contencioso Administrativo”</p>
+                   y de lo Contencioso Administrativo” 
+                   Se establecido en el art. 23 de la Constitución Política de Colombia.</p>
                    <a href='https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=65334' target="_bank"><input type='button' value='Leer Más'></a>
             </div>
         </div>

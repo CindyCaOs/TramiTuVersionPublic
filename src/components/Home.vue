@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="card">
-      <img src="../assets/imagenes/tramites3.png" class='card_img' alt="hombre_con_documento">
+      <img src="../assets/imagenes/home5.png" class='card_img' alt="hombre_con_documento">
       <div class="card_text">
       <p class="card_list"></p>
       <h3 class="card_title">Prescripción<span class="point"></span></h3>

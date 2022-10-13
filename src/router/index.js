@@ -3,7 +3,7 @@ import HomeView from '../views/VistaPrincipal.vue';
 import TramitesView from '../views/TramitesView.vue';
 import Navegacion from '../components/Navegacion.vue';
 import Formulario from '../views/FormularioView.vue';
-import Form from '../views/Form.vue';
+import FormEnsayo from '../views/Form.vue';
 
 
 const routes = [
@@ -33,9 +33,9 @@ const routes = [
     component: Formulario
   },
   {
-    path: '/Form',
-    name: 'Form',
-    component: Form
+    path: '/FormEnsayo',
+    name: 'FormEnsayo',
+    component: FormEnsayo
   },
 ]
 

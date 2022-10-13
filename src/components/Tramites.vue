@@ -7,7 +7,7 @@
     <a href="/Formulario" target="_blank"><img class="Box_tramite" src="../assets/imagenes/derechodepeticion.png" alt="PQR'S"></a>
   </div> 
   <div class="w3-container w3-center">
-    <a href="/Formulario" target="_blank"><img class="Box_tramite" src="../assets/imagenes/devoluciones.png" alt="PQR'S"></a>
+    <a href="/FormEnsayo" target="_blank"><img class="Box_tramite" src="../assets/imagenes/devoluciones.png" alt="PQR'S"></a>
   </div>    
   <div class="w3-container w3-center">
     <a href="/Formulario" target="_blank"><img class="Box_tramite" src="../assets/imagenes/prescripcion.png" alt="PQR'S"></a>

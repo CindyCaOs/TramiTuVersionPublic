@@ -1,7 +1,7 @@
 <template>
-    <Form />
+    <FormEnsayo />
 </template>
 
 <script setup>
-    import Form from '@/components/Form.vue';
+import FormEnsayo from '../components/FormEnsayo.vue'
 </script>
