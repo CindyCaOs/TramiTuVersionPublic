@@ -251,37 +251,38 @@ pdfDownload: function () {
       this.Fecha = document.getElementById('Fecha').value
       this.Nombre = document.getElementById('Nombre').value
       this.Apellidos = document.getElementById('Apellidos').value
+      this.Tipo_documento = document.getElementById('Tipo_documento').value
       this.Num_documento = document.getElementById('Num_documento').value
       this.Peticion = document.getElementById('Peticion').value
       this.Peticiones = document.getElementById('Peticiones').value
+      this.Hechos = document.getElementById('Hechos').value
       this.Sucesos = document.getElementById('Sucesos').value
       this.Num_tel = document.getElementById('Num_tel').value
       this.Email = document.getElementById('Email').value
       this.Direccion = document.getElementById('Direccion').value
   
-      const doc = new jsPDF();
+      const doc = new jsPDF('letter');
         
    
-        // 'y domiciliado en la calle' + this.direccion + 'en ejercicio del derecho de petición que consagra el artículo 23 de la Constitución Política de Colombia, Ley 1755 del 30 de junio de 2015 y demás normas concordantes, por medio del presente me permito solicitar se atienda la petición que más adelante formulare, de conformidad a los siguientes' +
+        // 'y domiciliado en la calle' + this.direccion + 'en ejercicio del derecho de petición que consagra el artículo 23 de la Constitución Política de Colombia, Ley 1755 del 30 de junio de 2015 y demás normas concordantes,  +
         // this.hechos + 'Por lo tanto con base en lo esbozado en el acápite anterior, solicito la siguiente' + 
         // this.peticiones + 'Para los efectos pertinentes, anexo los siguientes soportes y documentos:', 10, 10,'left');
-       
-        doc.text( 'Ciudad Pensilvania' + ' ' + '10-10-2022', 20, 10, 'left' );
-        doc.text( 'Yo '+ this.Nombre + ' ' + this.apellidos + ' ' + 'identificada con' + ' ' + this.tipodocumento + ' ' + 'número' + ' ' + this.numberdocumento , 20, 20, 'left' );
 
-doc.text( 'y domiciliado en la calle' + ' ' + this.direccion + ' ' + 'en ejercicio del derecho de petición que consagra el artículo 23 de la Constitución Política de Colombia,', 20, 30, 'left' );
-
-doc.text( 'This text is rotated\rand centered around\rthis point.', 140, 300, 45, 'center' );
-
-doc.text( 'This text is\raligned to the\rright.', 140, 400, 'right' );
-
-doc.text( 'This text is\raligned to the\rright.', 140, 550, 45, 'right' );
-
-doc.text( 'This single line is centered', 460, 50, 'center' );
-
-doc.text( 'This right aligned text\r\rhas an empty line.', 460, 200, 'right' );
+      doc.setFontSize(12).text( 'Ciudad ' + ' ' + this.Municipio + ' ' +'10-10-2022', 30, 10, 'left');
+      doc.text( 'Yo '+ this.Nombre + ' ' + this.Apellidos + ' ' + 'identificada con' + ' ' + this.Tipo_documento + ' ' + 
+      'número' + ' ' + this.Num_documento + ' ' + 'y domiciliado en la ', 30, 30, 'left' );
+      doc.text( this.Direccion + ' ' + 'en ejercicio del derecho de petición que consagra el artículo 23 de la Constitución Política,', 30, 40, 'left' );
+      doc.text( 'de Colombia, Ley 1755 del 30 de junio de 2015 y demás normas concordantes por medio del presente', 30, 50, 'left');
+      doc.text( 'me permito solicitar se atienda la etición que más adelante formulare, de conformidad ',  30, 60, 'left');
+      doc.text( 'a los siguientes HECHOS:' + ' ' + this.Hechos, 30, 70, 'left');
+      doc.text( 'Por lo tanto con base en lo esbozado en el acápite anterior, solicito la siguiente PETICIÓN:', 30, 80,'left');
+      doc.text(  this.Peticion+ ' ' +'Para los efectos pertinentes, anexo los siguientes', 30, 90, 'left');
+      doc.text( 'soportes y documentos: Cedúla - Documento - Radicado anterior-numero de caso', 30, 100, 'left');
+      doc.text( 'Recibiré notificaciones en la'+' ' + this.Direccion+ ' ' + 'correo electrónico' + ' ' + this.Email, 30, 110, 'left');
+      doc.text( 'celular' + ' ' + this.Num_tel, 30, 120, 'left' )
+      doc.text( this.Nombre + ' ' + this.Apellidos + ' ' + 'Cedula' + ' ' + this.Num_documento, 30, 130, 'left' )
    
-doc.setFontSize(12);
+      doc.setFontSize(12);
       doc.save("peticion.pdf")
     },
 },
