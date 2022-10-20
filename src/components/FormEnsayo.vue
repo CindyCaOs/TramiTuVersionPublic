@@ -65,7 +65,7 @@
       <div class="form_container">
         <div class="form_group">
           <select
-            name="id-document"
+            name="Tipo_documento"
             id="Tipo_documento"
             placeholder=""
             v-model="tipodocumento"
@@ -82,6 +82,19 @@
             </option>
           </select>
           <label class="form_label" for="name">Tipo de documento</label>
+        </div>
+      </div>
+      <div class="form_container">
+        <div class="form_group">
+          <input
+            type="text"
+            id="Num_documento"
+            placeholder=""
+            v-model="numerodocumento"
+            class="form_input"
+          />
+          <label class="form_label" for="name">Número documento</label>
+          <span class="form_line"></span>
         </div>
       </div>
       <div class="form_container">
@@ -126,7 +139,7 @@
         <div class="form_group">
           <input
             type="text"
-            id="Telefono"
+            id="Num_tel"
             placeholder=""
             v-model="telefono"
             class="form_input"
@@ -139,7 +152,7 @@
         <div class="form_group">
           <input
             type="text"
-            id="Num_tel"
+            id="Email"
             placeholder=""
             v-model="correo"
             class="form_input"
@@ -152,7 +165,7 @@
         <div class="form_group">
           <input
             type="text"
-            id="Email"
+            id="Direccion"
             placeholder=""
             v-model="dirnotificacion"
             class="form_input"
@@ -234,22 +247,41 @@ methods: {
     });
   },
 pdfDownload: function () {
+      this.Municipio = document.getElementById('Municipio').value
+      this.Fecha = document.getElementById('Fecha').value
       this.Nombre = document.getElementById('Nombre').value
-      console.log("Entre a la funcion");
+      this.Apellidos = document.getElementById('Apellidos').value
+      this.Num_documento = document.getElementById('Num_documento').value
+      this.Peticion = document.getElementById('Peticion').value
+      this.Peticiones = document.getElementById('Peticiones').value
+      this.Sucesos = document.getElementById('Sucesos').value
+      this.Num_tel = document.getElementById('Num_tel').value
+      this.Email = document.getElementById('Email').value
+      this.Direccion = document.getElementById('Direccion').value
+  
       const doc = new jsPDF();
-      
-        doc.text ('Yo '+ this.Nombre + this.apellidos + 'identificada con' + this.tipodocumento + 'número' + this.numberdocumento +
-        'y domiciliado en la calle' + this.direccion + 'en ejercicio del derecho de petición que consagra el artículo 23 de la Constitución Política de Colombia, Ley 1755 del 30 de junio de 2015 y demás normas concordantes, por medio del presente me permito solicitar se atienda la petición que más adelante formulare, de conformidad a los siguientes' +
-        this.hechos + 'Por lo tanto con base en lo esbozado en el acápite anterior, solicito la siguiente' + 
-        this.peticiones + 'Para los efectos pertinentes, anexo los siguientes soportes y documentos:', 30, 30, {
-        align: 'center',
-        with: '80',
-        display: 'flex',
-        width: '980px',
-        margin: '0 auto',
+        
    
-    
-      });
+        // 'y domiciliado en la calle' + this.direccion + 'en ejercicio del derecho de petición que consagra el artículo 23 de la Constitución Política de Colombia, Ley 1755 del 30 de junio de 2015 y demás normas concordantes, por medio del presente me permito solicitar se atienda la petición que más adelante formulare, de conformidad a los siguientes' +
+        // this.hechos + 'Por lo tanto con base en lo esbozado en el acápite anterior, solicito la siguiente' + 
+        // this.peticiones + 'Para los efectos pertinentes, anexo los siguientes soportes y documentos:', 10, 10,'left');
+       
+        doc.text( 'Ciudad Pensilvania' + ' ' + '10-10-2022', 20, 10, 'left' );
+        doc.text( 'Yo '+ this.Nombre + ' ' + this.apellidos + ' ' + 'identificada con' + ' ' + this.tipodocumento + ' ' + 'número' + ' ' + this.numberdocumento , 20, 20, 'left' );
+
+doc.text( 'y domiciliado en la calle' + ' ' + this.direccion + ' ' + 'en ejercicio del derecho de petición que consagra el artículo 23 de la Constitución Política de Colombia,', 20, 30, 'left' );
+
+doc.text( 'This text is rotated\rand centered around\rthis point.', 140, 300, 45, 'center' );
+
+doc.text( 'This text is\raligned to the\rright.', 140, 400, 'right' );
+
+doc.text( 'This text is\raligned to the\rright.', 140, 550, 45, 'right' );
+
+doc.text( 'This single line is centered', 460, 50, 'center' );
+
+doc.text( 'This right aligned text\r\rhas an empty line.', 460, 200, 'right' );
+   
+doc.setFontSize(12);
       doc.save("peticion.pdf")
     },
 },

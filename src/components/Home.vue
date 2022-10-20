@@ -53,7 +53,7 @@
           <div class="card_text">
           <h3 class="card_title">Noticias<span class="point">.</span></h3>
           <p class="card_date">20 de octubre 2022</p>
-          <p class="card_copy">Titular noticia tributaria del día 
+          <p class="card_copy">Conozca el texto aprobado en primer debate de la reforma tributaria 
           </p>
           <a href="https://www.ambitojuridico.com/noticias/tributario" class="card_button" target='_blank'>Leela aquí</a>
           </div>
@@ -69,7 +69,7 @@
           <div class="card_text">
           <h3 class="card_title">Leyes Colombianas<span class="point">.</span></h3>
           <p class="card_date">Senado de Colombia</p>
-          <p class="card_copy">Poner noticia tributaria del dia estauto tributario
+          <p class="card_copy">Senado de La Republica Colombia
           </p>
           <a href="http://leyes.senado.gov.co/proyectos/" class="card_button" target='_blank'>informate aquí</a>
           </div>
