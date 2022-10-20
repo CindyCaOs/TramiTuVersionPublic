@@ -16,21 +16,21 @@
                 </div>
                 <div class="form_container">
                     <div class="form_group">
-                        <input type="text" v-model="Fecha" id='name' placeholder="" class="form_input">
+                        <input type="text" v-model="Fecha" id='Fecha' placeholder="" class="form_input">
                         <label class="form_label" for="name">Fecha</label>
                         <span class="form_line"></span>
                     </div>    
                 </div>
                 <div class="form_container">
                     <div class="form_group">
-                        <input type="text" v-model="Nombre" id='name' placeholder="" class="form_input">
+                        <input type="text" v-model="Nombre" id='Nombre' placeholder="" class="form_input">
                         <label class="form_label" for="name">Nombre</label>
                         <span class="form_line"></span>
                     </div>    
                 </div>
                 <div class="form_container">
                     <div class="form_group">
-                        <input type="text"  id='name' v-model="apellidos" placeholder="" class="form_input">
+                        <input type="text"  id='Apellidos' v-model="apellidos" placeholder="" class="form_input">
                         <label class="form_label" for="name">Apellido..</label>
                         <span class="form_line"></span>
                     </div>
@@ -49,7 +49,7 @@
                     <div class="form_group">
                         <input type="text"  id='name' placeholder="" v-model="hechos" class="form_input">
                         <label class="form_label" for="name">Hechos</label>
-                        <textarea id='name' class="form_input" v-model="hechos_text" style="height:60px" placeholder="Sucesos"></textarea>
+                        <textarea id='name' class="form_input" v-model="hechos_text" style="height:60px"></textarea>
                         <span class="form_line"></span>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                     <div class="form_group">
                         <input type="text"  id='name' placeholder="" v-model="peticiones" class="form_input">
                         <label class="form_label" for="name">Petición</label>
-                        <textarea id='name' class="form_input" v-model="peticiones_text" style="height:60px" placeholder="Petición"></textarea>
+                        <textarea id='name' class="form_input" v-model="peticiones_text" style="height:60px"></textarea>
                         <span class="form_line"></span>
                     </div>
                 </div>
@@ -83,14 +83,15 @@
                     </div>
                 </div>
                 <div class="">   
-                    <input type="button" class="card_button" value="Generar" @click="nombre()">
-                </div>           
+                    <input type="button" value="Generar" v-on:click="pdfDownload" class="card_button">
+                </div>            
             </form>
     </section>        
 </template>
 
 <script>
 import axios from 'axios';
+import { jsPDF } from "jspdf";
 
 export default {
 data() {
@@ -140,12 +141,12 @@ methods: {
     this.flag = true;
   },
   cargarMunicipios() {
-    var select = document.getElementById("provincias"); //Seleccionamos el select
+    var select = document.getElementById("provincias"); 
     this.datos.forEach(element => {
-      var option = document.createElement("option"); //Creamos la opcion
+      var option = document.createElement("option"); 
       console.log(option);
-      option.innerHTML = element.municipio; //Metemos el texto en la opción
-      select.appendChild(option); //Metemos la opción en el select
+      option.innerHTML = element.municipio;
+      select.appendChild(option); 
     });
   },
   prueba(){
@@ -153,6 +154,18 @@ methods: {
       console.log(element.municipio);
     });
   },
+pdfDownload: function () {
+      this.Nombre = document.getElementById('Nombre').value
+      console.log("Entre a la funcion");
+      const doc = new jsPDF();
+      doc.text('Yo '+ this.Nombre + this.apellidos + 'identificada con' + this.tipodocumento + 'número' + this.numberdocumento +
+   'y domiciliado en la calle' + this.direccion + 'en ejercicio del derecho de petición que consagra el artículo 23 de la Constitución Política de Colombia, Ley 1755 del 30 de junio de 2015 y demás normas concordantes, por medio del presente me permito solicitar se atienda la petición que más adelante formulare, de conformidad a los siguientes' +
+   this.hechos + 'Por lo tanto con base en lo esbozado en el acápite anterior, solicito la siguiente' + 
+   this.peticiones + 'Para los efectos pertinentes, anexo los siguientes soportes y documentos:', 30, 30, {
+       with: 150
+      });
+      doc.save("reporte.pdf")
+    },
 },
 mounted(){
 this.retrieveData();
