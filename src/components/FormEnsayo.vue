@@ -384,7 +384,7 @@ body {
 .form_input {
   width: 100%;
   background: none;
-  color: #93373780;
+  color: #1f1b1b80;
   font-size: 1rem;
   padding: 0.6em 0.3em;
   border: none;
